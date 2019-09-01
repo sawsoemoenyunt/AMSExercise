@@ -1,12 +1,10 @@
 ﻿using System;
 
-namespace HelloWorld
+public class HelloWorld
 {
-    class MainClass
+    public static void Main()
     {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        Console.WriteLine("Hello World - Welcome to CAB201");
+        Console.ReadLine();
     }
 }
