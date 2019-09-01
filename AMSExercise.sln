@@ -1,0 +1,41 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{A526BE38-892C-4120-A495-928A3953F7BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", "{04E7C711-A069-4F5F-BA79-A443E77CD721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DieRoller", "DieRoller\DieRoller.csproj", "{108A55BC-092A-435D-9A4B-3AD9C4062F9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRoller", "DiceRoller\DiceRoller.csproj", "{BF6099AF-2C98-4104-9C07-FA673AF5BC37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentGradeOrder", "StudentGradeOrder\StudentGradeOrder.csproj", "{15F61D8A-13C7-4907-94F9-70A3338952B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A526BE38-892C-4120-A495-928A3953F7BD}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{A526BE38-892C-4120-A495-928A3953F7BD}.Debug|anycpu.Build.0 = Debug|anycpu
+		{A526BE38-892C-4120-A495-928A3953F7BD}.Release|anycpu.ActiveCfg = Release|anycpu
+		{A526BE38-892C-4120-A495-928A3953F7BD}.Release|anycpu.Build.0 = Release|anycpu
+		{04E7C711-A069-4F5F-BA79-A443E77CD721}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{04E7C711-A069-4F5F-BA79-A443E77CD721}.Debug|anycpu.Build.0 = Debug|anycpu
+		{04E7C711-A069-4F5F-BA79-A443E77CD721}.Release|anycpu.ActiveCfg = Release|anycpu
+		{04E7C711-A069-4F5F-BA79-A443E77CD721}.Release|anycpu.Build.0 = Release|anycpu
+		{108A55BC-092A-435D-9A4B-3AD9C4062F9B}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{108A55BC-092A-435D-9A4B-3AD9C4062F9B}.Debug|anycpu.Build.0 = Debug|anycpu
+		{108A55BC-092A-435D-9A4B-3AD9C4062F9B}.Release|anycpu.ActiveCfg = Release|anycpu
+		{108A55BC-092A-435D-9A4B-3AD9C4062F9B}.Release|anycpu.Build.0 = Release|anycpu
+		{BF6099AF-2C98-4104-9C07-FA673AF5BC37}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{BF6099AF-2C98-4104-9C07-FA673AF5BC37}.Debug|anycpu.Build.0 = Debug|anycpu
+		{BF6099AF-2C98-4104-9C07-FA673AF5BC37}.Release|anycpu.ActiveCfg = Release|anycpu
+		{BF6099AF-2C98-4104-9C07-FA673AF5BC37}.Release|anycpu.Build.0 = Release|anycpu
+		{15F61D8A-13C7-4907-94F9-70A3338952B6}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{15F61D8A-13C7-4907-94F9-70A3338952B6}.Debug|anycpu.Build.0 = Debug|anycpu
+		{15F61D8A-13C7-4907-94F9-70A3338952B6}.Release|anycpu.ActiveCfg = Release|anycpu
+		{15F61D8A-13C7-4907-94F9-70A3338952B6}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
