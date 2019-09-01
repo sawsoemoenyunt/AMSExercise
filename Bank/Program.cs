@@ -10,6 +10,7 @@ namespace Bank
     {
         // Private variables for storing the account balance and interest rate
         // ...
+        private double balance, interestRate;
 
         /// <summary>
         /// Creates a new bank account with no starting balance and the default
@@ -18,6 +19,8 @@ namespace Bank
         public BankAccount()
         {
             // ...
+            this.balance = 0.0;
+            this.interestRate = 9.8; //9.8 percentage
         }
 
         /// <summary>
@@ -28,6 +31,8 @@ namespace Bank
         public BankAccount(double startingBalance)
         {
             // ...
+            this.balance = startingBalance;
+            this.interestRate = 9.8;
         }
 
         /// <summary>
@@ -39,6 +44,8 @@ namespace Bank
         public BankAccount(double startingBalance, double interestRate)
         {
             // ...
+            this.balance = startingBalance;
+            this.interestRate = interestRate;
         }
 
         /// <summary>
@@ -53,6 +60,15 @@ namespace Bank
         public bool Withdraw(double amount)
         {
             // ...
+            if (this.balance >= amount)
+            {
+                this.balance = this.balance - amount;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -62,6 +78,7 @@ namespace Bank
         public void Deposit(double amount)
         {
             // ...
+            this.balance += amount;
         }
 
         /// <summary>
@@ -71,6 +88,7 @@ namespace Bank
         public double QueryBalance()
         {
             // ...
+            return this.balance;
         }
 
         /// <summary>
@@ -81,6 +99,7 @@ namespace Bank
         public void SetInterestRate(double interestRate)
         {
             // ...
+            this.interestRate = interestRate;
         }
 
         /// <summary>
@@ -90,6 +109,7 @@ namespace Bank
         public double GetInterestRate()
         {
             // ...
+            return this.interestRate;
         }
 
         /// <summary>
@@ -99,6 +119,7 @@ namespace Bank
         public void AddInterest()
         {
             // ...
+            this.balance = this.balance + (this.balance * (this.interestRate / 100));
         }
     }
     class Program
