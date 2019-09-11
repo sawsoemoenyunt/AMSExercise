@@ -149,7 +149,7 @@ namespace GenomicSequenceRetrieval
                 }
                 catch (Exception ex)
                 {
-                    ShowError(ex.Message);
+                    ShowError(ex.Message + "\nPlease enter valid command.");
                 }
             }
             else
@@ -162,7 +162,7 @@ namespace GenomicSequenceRetrieval
         {
             if (args.Length == 4)
             {
-                string searchId = args[4];
+                string searchId = args[3];
                 try
                 {
                     SearchLevel2 search2 = new SearchLevel2(programName, level, fileName, searchId);
@@ -184,29 +184,38 @@ namespace GenomicSequenceRetrieval
         {
             if (args.Length == 5)
             {
-                string queryFileName = args[4];
-                string resultFileName = args[5];
-                if (queryFileName.Contains(".txt") && resultFileName.Contains(".txt"))
+                string queryFileName, resultFileName;
+                try
                 {
-                    try
+                    queryFileName = args[3];
+                    resultFileName = args[4];
+
+                    if (queryFileName.Contains(".txt") && resultFileName.Contains(".txt"))
                     {
-                        SearchLevel3 search3 = new SearchLevel3(programName, level, fileName, queryFileName, resultFileName);
-                        search3.StartSearching();
-                        search3.ShowResult();
+                        try
+                        {
+                            SearchLevel3 search3 = new SearchLevel3(programName, level, fileName, queryFileName, resultFileName);
+                            search3.StartSearching();
+                            search3.ShowResult();
+                        }
+                        catch (Exception ex)
+                        {
+                            ShowError(ex.Message);
+                        }
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        ShowError(ex.Message);
+                        ShowError("An error occured. Wrong file format.");
                     }
                 }
-                else
+                catch (Exception ex)
                 {
-                    ShowError("An error occured. Wrong file format.");
+                    ShowError(ex.Message + "\nPlease enter a valid command.");
                 }
             }
             else
             {
-                ShowError("-level2 required 4 valid arguments.");
+                ShowError("-level3 required 5 valid arguments.");
             }
         }
 

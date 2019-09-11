@@ -24,6 +24,11 @@ namespace GenomicSequenceRetrieval
             }
         }
 
+        public void Close()
+        {
+            reader.Close();
+        }
+
         public string SequentialAccessByID(string id)
         {
             this.reader.BaseStream.Seek(0, SeekOrigin.Begin);
@@ -54,6 +59,7 @@ namespace GenomicSequenceRetrieval
                     }
                 }
             }
+            this.Close();
             return result;
         }
 
@@ -98,6 +104,7 @@ namespace GenomicSequenceRetrieval
                     }
                 }
             }
+            this.Close();
             return sequences;
         }
 

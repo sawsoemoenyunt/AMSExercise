@@ -12,7 +12,7 @@ namespace GenomicSequenceRetrieval
         private string queryFileName;
         private string resultFileName;
         private List<string> resultList = new List<string>();
-        private string[] idList;
+        private StreamReader streamReader;
         private StreamWriter streamWriter;
 
         public SearchLevel3(string programName, FlagLevel level, string file, string query, string result) : base(programName, level, file)
@@ -30,13 +30,12 @@ namespace GenomicSequenceRetrieval
         {
             try
             {
-                idList = File.ReadAllLines(this.queryFileName);
-
-                foreach (var id in idList)
+                streamReader = new StreamReader(this.queryFileName);
+                while (true)
                 {
+                    string id = streamReader.ReadLine();
                     string result = base.CurrentReader().SequentialAccessByID(id);
                     this.resultList.Add(result);
-
                 }
 
             }
@@ -44,6 +43,7 @@ namespace GenomicSequenceRetrieval
             {
                 base.ShowError(ex.Message);
             }
+            streamReader.Close();
         }
 
         public void SaveResult()
