@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations", "Permutation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance_of_SuperHeroes", "Inheritance_of_SuperHeroes\Inheritance_of_SuperHeroes.csproj", "{0CC3FA0E-87BD-4D12-A36A-D8B52C170E86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenomicSequenceRetrieval", "GenomicSequenceRetrieval\GenomicSequenceRetrieval.csproj", "{216C870D-E986-4183-86C8-2D12E6BA8F3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -115,5 +117,9 @@ Global
 		{0CC3FA0E-87BD-4D12-A36A-D8B52C170E86}.Debug|anycpu.Build.0 = Debug|anycpu
 		{0CC3FA0E-87BD-4D12-A36A-D8B52C170E86}.Release|anycpu.ActiveCfg = Release|anycpu
 		{0CC3FA0E-87BD-4D12-A36A-D8B52C170E86}.Release|anycpu.Build.0 = Release|anycpu
+		{216C870D-E986-4183-86C8-2D12E6BA8F3E}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{216C870D-E986-4183-86C8-2D12E6BA8F3E}.Debug|anycpu.Build.0 = Debug|anycpu
+		{216C870D-E986-4183-86C8-2D12E6BA8F3E}.Release|anycpu.ActiveCfg = Release|anycpu
+		{216C870D-E986-4183-86C8-2D12E6BA8F3E}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
