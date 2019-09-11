@@ -43,6 +43,7 @@ namespace GenomicSequenceRetrieval
         {
             if (args[0].Equals("Search16s"))
             {
+                this.programName = args[0];
                 return true;
             }
             else
@@ -55,8 +56,6 @@ namespace GenomicSequenceRetrieval
         private bool ValidateLevel()
         {
             bool result = true;
-
-            this.programName = args[0];
 
             if (args[1].Equals("-level1"))
             {

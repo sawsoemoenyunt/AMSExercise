@@ -34,32 +34,40 @@ namespace GenomicSequenceRetrieval
             this.reader.BaseStream.Seek(0, SeekOrigin.Begin);
 
             string result = "";
-            //Search16s -level2 16S.fasta NR_115365.1
-            while (true)
-            {
-                var line = reader.ReadLine();
-                if (string.IsNullOrEmpty(line))
-                {
-                    result = string.Format("Error, sequence {0} not found.", id);
-                    break;
-                }
 
-                if (line.StartsWith(">", StringComparison.Ordinal))
+            if(id.ToCharArray().Length == 11)
+            {
+                //Search16s -level2 16S.fasta NR_115365.1
+                while (true)
                 {
-                    //metadata
-                    if (line.Contains(id))
+                    var line = reader.ReadLine();
+                    if (string.IsNullOrEmpty(line))
                     {
-                        result = line;
-                        string dna = reader.ReadLine();
-                        if (line.StartsWith("", StringComparison.Ordinal))
-                        {
-                            result += "\n" + dna;
-                        }
+                        result = string.Format("Error, sequence {0} not found.", id);
                         break;
+                    }
+
+                    if (line.StartsWith(">", StringComparison.Ordinal))
+                    {
+                        //metadata
+                        if (line.Contains(id))
+                        {
+                            result = line;
+                            string dna = reader.ReadLine();
+                            if (line.StartsWith("", StringComparison.Ordinal))
+                            {
+                                result += "\n" + dna;
+                            }
+                            break;
+                        }
                     }
                 }
             }
-            this.Close();
+            else
+            {
+                result = string.Format("Error, sequence {0} not found.", id);
+            }
+            
             return result;
         }
 
