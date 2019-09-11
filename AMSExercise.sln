@@ -31,6 +31,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompoundInterestCalculator"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sequence", "Sequence\Sequence.csproj", "{7982A4A7-2D76-4CA1-9830-2ED48292381D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLineArgsEx", "CommandLineArgsEx\CommandLineArgsEx.csproj", "{94E6AFEB-D221-431B-B91C-CE83C71862CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations", "Permutations\Permutations.csproj", "{E737EC5C-BC8A-4E22-9C4D-28468E0A4373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance_of_SuperHeroes", "Inheritance_of_SuperHeroes\Inheritance_of_SuperHeroes.csproj", "{0CC3FA0E-87BD-4D12-A36A-D8B52C170E86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -97,5 +103,17 @@ Global
 		{7982A4A7-2D76-4CA1-9830-2ED48292381D}.Debug|anycpu.Build.0 = Debug|anycpu
 		{7982A4A7-2D76-4CA1-9830-2ED48292381D}.Release|anycpu.ActiveCfg = Release|anycpu
 		{7982A4A7-2D76-4CA1-9830-2ED48292381D}.Release|anycpu.Build.0 = Release|anycpu
+		{94E6AFEB-D221-431B-B91C-CE83C71862CC}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{94E6AFEB-D221-431B-B91C-CE83C71862CC}.Debug|anycpu.Build.0 = Debug|anycpu
+		{94E6AFEB-D221-431B-B91C-CE83C71862CC}.Release|anycpu.ActiveCfg = Release|anycpu
+		{94E6AFEB-D221-431B-B91C-CE83C71862CC}.Release|anycpu.Build.0 = Release|anycpu
+		{E737EC5C-BC8A-4E22-9C4D-28468E0A4373}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{E737EC5C-BC8A-4E22-9C4D-28468E0A4373}.Debug|anycpu.Build.0 = Debug|anycpu
+		{E737EC5C-BC8A-4E22-9C4D-28468E0A4373}.Release|anycpu.ActiveCfg = Release|anycpu
+		{E737EC5C-BC8A-4E22-9C4D-28468E0A4373}.Release|anycpu.Build.0 = Release|anycpu
+		{0CC3FA0E-87BD-4D12-A36A-D8B52C170E86}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{0CC3FA0E-87BD-4D12-A36A-D8B52C170E86}.Debug|anycpu.Build.0 = Debug|anycpu
+		{0CC3FA0E-87BD-4D12-A36A-D8B52C170E86}.Release|anycpu.ActiveCfg = Release|anycpu
+		{0CC3FA0E-87BD-4D12-A36A-D8B52C170E86}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
