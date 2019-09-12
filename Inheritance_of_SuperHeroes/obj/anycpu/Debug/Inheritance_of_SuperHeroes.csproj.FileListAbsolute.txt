@@ -1,0 +1,5 @@
+/Users/macbookpro/Projects/AMSExercise/Inheritance_of_SuperHeroes/obj/anycpu/Debug/Inheritance_of_SuperHeroes.csproj.CoreCompileInputs.cache
+/Users/macbookpro/Projects/AMSExercise/Inheritance_of_SuperHeroes/bin/Debug/Inheritance_of_SuperHeroes.exe
+/Users/macbookpro/Projects/AMSExercise/Inheritance_of_SuperHeroes/bin/Debug/Inheritance_of_SuperHeroes.pdb
+/Users/macbookpro/Projects/AMSExercise/Inheritance_of_SuperHeroes/obj/anycpu/Debug/Inheritance_of_SuperHeroes.exe
+/Users/macbookpro/Projects/AMSExercise/Inheritance_of_SuperHeroes/obj/anycpu/Debug/Inheritance_of_SuperHeroes.pdb

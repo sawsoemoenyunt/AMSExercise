@@ -1,0 +1,5 @@
+/Users/macbookpro/Projects/AMSExercise/LinearSearch/bin/Debug/LinearSearch.exe
+/Users/macbookpro/Projects/AMSExercise/LinearSearch/bin/Debug/LinearSearch.pdb
+/Users/macbookpro/Projects/AMSExercise/LinearSearch/obj/anycpu/Debug/LinearSearch.csproj.CoreCompileInputs.cache
+/Users/macbookpro/Projects/AMSExercise/LinearSearch/obj/anycpu/Debug/LinearSearch.exe
+/Users/macbookpro/Projects/AMSExercise/LinearSearch/obj/anycpu/Debug/LinearSearch.pdb

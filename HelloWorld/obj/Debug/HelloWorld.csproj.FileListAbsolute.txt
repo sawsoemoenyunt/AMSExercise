@@ -1,0 +1,6 @@
+/Users/macbookpro/Projects/AMSExercise/HelloWorld/bin/Debug/HelloWorld.exe
+/Users/macbookpro/Projects/AMSExercise/HelloWorld/bin/Debug/HelloWorld.pdb
+/Users/macbookpro/Projects/AMSExercise/HelloWorld/obj/Debug/HelloWorld.csprojAssemblyReference.cache
+/Users/macbookpro/Projects/AMSExercise/HelloWorld/obj/Debug/HelloWorld.csproj.CoreCompileInputs.cache
+/Users/macbookpro/Projects/AMSExercise/HelloWorld/obj/Debug/HelloWorld.exe
+/Users/macbookpro/Projects/AMSExercise/HelloWorld/obj/Debug/HelloWorld.pdb

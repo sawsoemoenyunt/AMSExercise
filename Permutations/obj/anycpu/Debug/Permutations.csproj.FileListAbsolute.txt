@@ -1,0 +1,5 @@
+/Users/macbookpro/Projects/AMSExercise/Permutations/bin/Debug/Permutations.exe
+/Users/macbookpro/Projects/AMSExercise/Permutations/bin/Debug/Permutations.pdb
+/Users/macbookpro/Projects/AMSExercise/Permutations/obj/anycpu/Debug/Permutations.csproj.CoreCompileInputs.cache
+/Users/macbookpro/Projects/AMSExercise/Permutations/obj/anycpu/Debug/Permutations.exe
+/Users/macbookpro/Projects/AMSExercise/Permutations/obj/anycpu/Debug/Permutations.pdb

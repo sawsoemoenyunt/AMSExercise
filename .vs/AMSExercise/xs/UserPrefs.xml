@@ -1,0 +1,49 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{216C870D-E986-4183-86C8-2D12E6BA8F3E}|Default">
+  <MonoDevelop.Ide.ItemProperties.Matrix FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.HelloWorldV2 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.HelloWorld PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.CommandLineArgsEx FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.DiceRoller FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.RandomArray FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.StringOrder FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GenomicSequenceRetrieval/FastaReader.cs">
+    <Files>
+      <File FileName="GenomicSequenceRetrieval/Program.cs" Line="16" Column="10" />
+      <File FileName="GenomicSequenceRetrieval/Validator.cs" />
+      <File FileName="GenomicSequenceRetrieval/Search.cs" Line="20" Column="46" />
+      <File FileName="GenomicSequenceRetrieval/SearchLevel1.cs" />
+      <File FileName="GenomicSequenceRetrieval/SearchLevel2.cs" Line="16" Column="42" />
+      <File FileName="GenomicSequenceRetrieval/SearchLevel3.cs" Line="62" Column="14" />
+      <File FileName="GenomicSequenceRetrieval/FastaReader.cs" Line="68" Column="78" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AMSExercise" expanded="True">
+            <Node name="GenomicSequenceRetrieval" expanded="True">
+              <Node name="FastaReader.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Inheritance__of__SuperHeroes PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.IncomeTaxCalculator FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.StudentGradeOrder FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Bank FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Permutations PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Sequence FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.ItemProperties.GenomicSequenceRetrieval PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.DieRoller FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MatrixLibrary FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.CompoundInterestCalculator FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.LinearSearch PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.MilesPerHourTable FirstBuild="True" />
+</Properties>
