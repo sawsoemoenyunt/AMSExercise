@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace GenomicSequenceRetrieval
 {
+   
+    ///<summary>
+    ///    Enumeration list for different levels of search
+    ///</summary>
     public enum FlagLevel
     {
         Level1 = 1,
@@ -13,6 +17,9 @@ namespace GenomicSequenceRetrieval
         Level3 = 3
     }
 
+    ///<summary>
+    ///    The main Validator class
+    ///</summary>
     public class Validator
     {
         private string[] args;
@@ -24,6 +31,12 @@ namespace GenomicSequenceRetrieval
             this.args = args;
         }
 
+        /*
+        start validating the command arguments
+             */
+        ///<summary>
+        ///    start validating the command arguments
+        ///</summary>
         public void StartValidate()
         {
             if (args.Length > 2)
@@ -39,6 +52,14 @@ namespace GenomicSequenceRetrieval
             }
         }
 
+        ///<summary>
+        ///    Validate the program name
+        ///</summary>
+        ///<remark>
+        ///<returns>
+        ///if validate pass return true otherwise false
+        ///</returns>
+        ///</remark>
         private bool ValidateProgram()
         {
             if (args[0].Equals("Search16s"))
@@ -53,6 +74,14 @@ namespace GenomicSequenceRetrieval
             }
         }
 
+        ///<summary>
+        ///    Validate the flag level
+        ///</summary>
+        ///<remark>
+        ///<returns>
+        ///if validate pass return true otherwise false
+        ///</returns>
+        ///</remark>
         private bool ValidateLevel()
         {
             bool result = true;
@@ -77,6 +106,14 @@ namespace GenomicSequenceRetrieval
             return result;
         }
 
+        ///<summary>
+        ///    Validate the file name
+        ///</summary>
+        ///<remark>
+        ///<returns>
+        ///if validate pass return true otherwise false
+        ///</returns>
+        ///</remark>
         private bool ValidateFileName()
         {
             this.fileName = args[2];
@@ -98,17 +135,17 @@ namespace GenomicSequenceRetrieval
             switch (this.level)
             {
                 case FlagLevel.Level1:
-                    //level 1
+                    ///level 1
                     Level1Search();
                     break;
 
                 case FlagLevel.Level2:
-                    //level 2
+                    ///level 2
                     Level2Search();
                     break;
 
                 case FlagLevel.Level3:
-                    //level 3
+                    ///level 3
                     Level3Search();
                     break;
 
@@ -118,6 +155,9 @@ namespace GenomicSequenceRetrieval
             }
         }
 
+        ///<summary>
+        ///Create level1 search after that start searching and showing resutls
+        ///</summary>
         private void Level1Search()
         {
             if (args.Length == 5)
@@ -157,6 +197,9 @@ namespace GenomicSequenceRetrieval
             }
         }
 
+        ///<summary>
+        ///Create level2 search after that start searching and showing resutls
+        ///</summary>
         private void Level2Search()
         {
             if (args.Length == 4)
@@ -179,6 +222,9 @@ namespace GenomicSequenceRetrieval
             }
         }
 
+        ///<summary>
+        ///Create level3 search after that start searching and showing resutls
+        ///</summary>
         private void Level3Search()
         {
             if (args.Length == 5)

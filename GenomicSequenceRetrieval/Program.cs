@@ -13,6 +13,7 @@ namespace GenomicSequenceRetrieval
             Validator v = new Validator(args);
             v.StartValidate();
             Console.ReadLine();
+
         }
     }
 }

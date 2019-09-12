@@ -10,10 +10,10 @@
     <Files>
       <File FileName="GenomicSequenceRetrieval/Program.cs" Line="16" Column="10" />
       <File FileName="GenomicSequenceRetrieval/Validator.cs" />
-      <File FileName="GenomicSequenceRetrieval/Search.cs" Line="20" Column="46" />
+      <File FileName="GenomicSequenceRetrieval/Search.cs" />
       <File FileName="GenomicSequenceRetrieval/SearchLevel1.cs" />
-      <File FileName="GenomicSequenceRetrieval/SearchLevel2.cs" Line="16" Column="42" />
-      <File FileName="GenomicSequenceRetrieval/SearchLevel3.cs" Line="62" Column="14" />
+      <File FileName="GenomicSequenceRetrieval/SearchLevel2.cs" />
+      <File FileName="GenomicSequenceRetrieval/SearchLevel3.cs" />
       <File FileName="GenomicSequenceRetrieval/FastaReader.cs" Line="68" Column="78" />
     </Files>
     <Pads>

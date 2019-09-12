@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace GenomicSequenceRetrieval
 {
+    
+    ///<summary>
+    ///    The main Search class
+    ///</summary>
     public abstract class Search
     {
         private string programName;
@@ -29,21 +33,33 @@ namespace GenomicSequenceRetrieval
             }
         }
 
+        ///<summary>
+        ///    This method return current FastaReader
+        ///</summary>
         public FastaReader CurrentReader()
         {
             return reader;
         }
 
+        ///<summary>
+        ///    This method return current program name
+        ///</summary>
         public string CurrentProgram()
         {
             return programName;
         }
 
+        ///<summary>
+        ///    This method return current FlagLevel
+        ///</summary>
         public FlagLevel CurrentLevel()
         {
             return searchLevel;
         }
 
+        ///<summary>
+        ///    This method is to show error on console
+        ///</summary>
         public void ShowError(string errorText)
         {
             Console.WriteLine(errorText);

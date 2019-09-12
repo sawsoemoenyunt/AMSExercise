@@ -8,6 +8,10 @@ using System.Text;
 
 namespace GenomicSequenceRetrieval
 {
+    
+    //<summary>
+    //The class inherit from Search.class
+    //</summary>
     public class SearchLevel3 : Search
     {
         private string queryFileName;
