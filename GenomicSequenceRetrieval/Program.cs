@@ -10,10 +10,8 @@ namespace GenomicSequenceRetrieval
     {
         static void Main(string[] args)
         {
-            Validator v = new Validator(args);
+            SequenceRetrieval v = new SequenceRetrieval(args);
             v.StartValidate();
-            Console.ReadLine();
-
         }
     }
 }

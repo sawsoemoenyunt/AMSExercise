@@ -9,9 +9,9 @@ using System.Text;
 namespace GenomicSequenceRetrieval
 {
     
-    //<summary>
-    //The class inherit from Search.class
-    //</summary>
+    ///<summary>
+    ///The class inherit from Search.class
+    ///</summary>
     public class SearchLevel3 : Search
     {
         private string queryFileName;
@@ -38,7 +38,7 @@ namespace GenomicSequenceRetrieval
 
         public override void ShowResult()
         {
-            //do nothing here
+            ///do nothing here
         }
 
         public override void StartSearching()
@@ -74,16 +74,16 @@ namespace GenomicSequenceRetrieval
                 {
                     if (result.ToLower().Contains("error"))
                     {
-                        //show error on console;
+                        ///show error on console;
                         base.ShowError(result);
                     }
                     else
                     {
-                        //save data to results.txt
+                        ///save data to results.txt
                         streamWriter.WriteLine(result);
                     }
                 }
-                //close the writer
+                ///close the writer
                 streamWriter.Close();
             }
             catch (Exception ex)

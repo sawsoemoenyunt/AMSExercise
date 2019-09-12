@@ -20,13 +20,13 @@ namespace GenomicSequenceRetrieval
     ///<summary>
     ///    The main Validator class
     ///</summary>
-    public class Validator
+    public class SequenceRetrieval
     {
         private string[] args;
         private string programName, fileName;
         private FlagLevel level;
 
-        public Validator(string[] args)
+        public SequenceRetrieval(string[] args)
         {
             this.args = args;
         }

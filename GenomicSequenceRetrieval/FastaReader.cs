@@ -9,37 +9,37 @@ using System.Text;
 namespace GenomicSequenceRetrieval
 {
     
-    //<summary>
-    //    The main FastaReader class
-    //    Contains all methods for dealing with.fasta file
-    //</summary>
-    //<remark>
-    //        This class can read and search data from .fasta file
-    //</remark>
+    ///<summary>
+    ///    The main FastaReader class
+    ///    Contains all methods for dealing with.fasta file
+    ///</summary>
+    ///<remark>
+    ///        This class can read and search data from .fasta file
+    ///</remark>
     public class FastaReader
     {
-        //<summary>a private variable to store StreamReader</summary>
+        ///<summary>a private variable to store StreamReader</summary>
         private StreamReader reader;
 
         /*
             Intialize FastaReader
         */
-        //<summary>
-        //    Intialize FastaReader
-        //</summary>
-        //<remark>
-        //<para>
-        //This can create FastaReader
-        //</para>
-        //</remark>
-        //<example>
-        //<code>
-        //    FastaReader fastaReader = new FastaReader("filename.fasta");
-        //</code>
-        //</example>
-        //<exception>
-        //    Throw exception if reader cannot create
-        //</exception>
+        ///<summary>
+        ///    Intialize FastaReader
+        ///</summary>
+        ///<remark>
+        ///<para>
+        ///This can create FastaReader
+        ///</para>
+        ///</remark>
+        ///<example>
+        ///<code>
+        ///    FastaReader fastaReader = new FastaReader("filename.fasta");
+        ///</code>
+        ///</example>
+        ///<exception>
+        ///    Throw exception if reader cannot create
+        ///</exception>
         public FastaReader(string filePath)
         {
             try
@@ -53,29 +53,29 @@ namespace GenomicSequenceRetrieval
         }
 
         
-        //<summary>
-        //    Close FastaReader
-        //</summary>
+        ///<summary>
+        ///    Close FastaReader
+        ///</summary>
         public void Close()
         {
             reader.Close();
         }
 
        
-        //<summary>
-        //    Search DNA seqence by SequenceID
-        //</summary>
-        //<remark>
-        //<returns>
-        //The found DNA sequence
-        //</returns>
-        //</remark>
-        //<example>
-        //<code>
-        //    FastaReader fastaReader = new FastaReader("filename.fasta");
-        //    string foundRow = fastaReader.SequentialAccessByID(yourSequenceID);
-        //</code>
-        //</example>
+        ///<summary>
+        ///    Search DNA seqence by SequenceID
+        ///</summary>
+        ///<remark>
+        ///<returns>
+        ///The found DNA sequence
+        ///</returns>
+        ///</remark>
+        ///<example>
+        ///<code>
+        ///    FastaReader fastaReader = new FastaReader("filename.fasta");
+        ///    string foundRow = fastaReader.SequentialAccessByID(yourSequenceID);
+        ///</code>
+        ///</example>
         public string SequentialAccessByID(string id)
         {
             this.reader.BaseStream.Seek(0, SeekOrigin.Begin);
@@ -84,7 +84,7 @@ namespace GenomicSequenceRetrieval
 
             if(id.ToCharArray().Length == 11)
             {
-                //Search16s -level2 16S.fasta NR_115365.1
+                ///Search16s -level2 16S.fasta NR_115365.1
                 while (true)
                 {
                     var line = reader.ReadLine();
@@ -96,7 +96,7 @@ namespace GenomicSequenceRetrieval
 
                     if (line.StartsWith(">", StringComparison.Ordinal))
                     {
-                        //metadata
+                        ///metadata
                         if (line.Contains(id))
                         {
                             result = line;
@@ -118,20 +118,20 @@ namespace GenomicSequenceRetrieval
             return result;
         }
 
-        //<summary>
-        //    Show list of DNA sequence by start position and number of rows
-        //</summary>
-        //<remark>
-        //<returns>
-        //The list of DNA sequences
-        //</returns>
-        //</remark>
-        //<example>
-        //<code>
-        //    FastaReader fastaReader = new FastaReader("filename.fasta");
-        //    List<String> foundRows = fastaReader.SequentialAccessByStartingPosition(273, 10);
-        //</code>
-        //</example>
+        ///<summary>
+        ///    Show list of DNA sequence by start position and number of rows
+        ///</summary>
+        ///<remark>
+        ///<returns>
+        ///The list of DNA sequences
+        ///</returns>
+        ///</remark>
+        ///<example>
+        ///<code>
+        ///    FastaReader fastaReader = new FastaReader("filename.fasta");
+        ///    List<String> foundRows = fastaReader.SequentialAccessByStartingPosition(273, 10);
+        ///</code>
+        ///</example>
         public List<String> SequentialAccessByStartingPosition(int start, int rowCount = 1)
         {
 
@@ -152,7 +152,7 @@ namespace GenomicSequenceRetrieval
                 if (sequenceCounter >= start)
                 {
                     if (line.StartsWith(">", StringComparison.Ordinal))
-                    {//metadata
+                    {///metadata
 
                         if (sequences.Count == rowCount)
                         {
@@ -165,7 +165,7 @@ namespace GenomicSequenceRetrieval
                         }
                     }
                     else
-                    {//dna
+                    {///dna
                         if (sequences.Count > 0)
                         {
                             sequences[sequences.Count - 1] += "\n" + line;
