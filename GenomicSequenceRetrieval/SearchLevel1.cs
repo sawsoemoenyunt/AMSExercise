@@ -18,8 +18,15 @@ namespace GenomicSequenceRetrieval
 
         public SearchLevel1(string programName, FlagLevel level, string fileName, int start, int rows) : base(programName, level, fileName)
         {
-            this.startIndex = start;
-            this.rows = rows;
+            if (start % 2 == 0)
+            {
+                ShowError("Please enter odd number for start position.");
+            }
+            else
+            {
+                this.startIndex = start;
+                this.rows = rows;
+            }
         }
 
         public override void StartSearching()

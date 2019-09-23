@@ -40,6 +40,9 @@
     <Compile Include="SearchLevel2.cs" />
     <Compile Include="SearchLevel3.cs" />
     <Compile Include="FastaReader.cs" />
+    <Compile Include="SearchLevel4.cs" />
+    <Compile Include="SearchLevel5.cs" />
+    <Compile Include="SearchLevel6.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

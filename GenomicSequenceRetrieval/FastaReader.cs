@@ -61,6 +61,128 @@ namespace GenomicSequenceRetrieval
             reader.Close();
         }
 
+        //lvl6
+        public List<string> GetIdListByName(string name)
+        {
+            List<string> idList = new List<string>();
+
+            while (true)
+            {
+                var line = reader.ReadLine();
+                if (string.IsNullOrEmpty(line))
+                {
+                    break;
+                }
+
+                if (line.StartsWith(">", StringComparison.OrdinalIgnoreCase))
+                {
+                    if (line.Contains(name))
+                    {
+                        string[] metadata = line.Split(null);
+
+                        foreach (string data in metadata)
+                        {
+                            if (data.StartsWith(">", StringComparison.Ordinal))
+                            {
+                                string id = data.Remove(0, 1);
+                                idList.Add(id);
+                            }
+                        }
+                    }
+                }
+            }
+
+            return idList;
+        }
+
+        //lvl5
+        public List<string> GetIdListBySequence(string sequence)
+        {
+            List<string> idList = new List<string>();
+
+            string tempId = "";
+            string tempSequence = "";
+
+            while (true)
+            {
+                var line = reader.ReadLine();
+                if (string.IsNullOrEmpty(line))
+                {
+                    break;
+                }
+
+                if (line.StartsWith(">", StringComparison.OrdinalIgnoreCase))
+                {
+                    tempId = line;
+                }
+                else
+                {
+                    if (line.Contains(sequence))
+                    {
+                        tempSequence = line;
+
+                        string[] metadata = tempId.Split(null);
+
+                        foreach (string data in metadata)
+                        {
+                            if (data.StartsWith(">", StringComparison.Ordinal))
+                            {
+                                string id = data.Remove(0, 1);
+                                idList.Add(id);
+                            }
+                        }
+                    }
+                }
+            }
+
+            return idList;
+        }
+
+        //lvl 4
+        public string DirectAccessByIndex(string id, int index)
+        {
+            this.reader.DiscardBufferedData();
+            this.reader.BaseStream.Seek(index, SeekOrigin.Begin);
+
+            Console.WriteLine("Position " + reader.BaseStream.Position);
+            string result = "";
+
+            if (id.ToCharArray().Length >= 11)
+            {
+                ///Search16s -level2 16S.fasta NR_115365.1
+                while (true)
+                {
+                    var line = reader.ReadLine();
+                    if (string.IsNullOrEmpty(line))
+                    {
+                        result = string.Format("Error, sequence {0} not found.", id);
+                        break;
+                    }
+
+                    if (line.StartsWith(">", StringComparison.Ordinal))
+                    {
+                        ///metadata
+                        if (line.Contains(id))
+                        {
+                            result = line;
+                            string dna = reader.ReadLine();
+                            if (line.StartsWith("", StringComparison.Ordinal))
+                            {
+                                result += "\n" + dna;
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                result = string.Format("Error, sequence {0} not found.", id);
+            }
+
+            return result;
+        }
+
        
         ///<summary>
         ///    Search DNA seqence by SequenceID
@@ -82,7 +204,7 @@ namespace GenomicSequenceRetrieval
 
             string result = "";
 
-            if(id.ToCharArray().Length == 11)
+            if(id.ToCharArray().Length >= 11)
             {
                 ///Search16s -level2 16S.fasta NR_115365.1
                 while (true)
