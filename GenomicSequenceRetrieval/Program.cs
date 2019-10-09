@@ -12,10 +12,13 @@ namespace GenomicSequenceRetrieval
         {
             //SequenceRetrieval v = new SequenceRetrieval(args);
             //v.StartValidate();
-            //SearchLevel4 s = new SearchLevel4("IndexSequence16s", "16S.fasta", "NR_118941.1", 1236733);
-            //s.Search();
-            SearchLevel6 s = new SearchLevel6();
+            SearchLevel4 s = new SearchLevel4("IndexSequence16s", "16S.fasta", "NR_118941.1", 1236733);
             s.Search();
+            //SearchLevel6 s = new SearchLevel6();
+            //s.Search();
+
+            //FastaReader r = new FastaReader("16S.fasta");
+            //r.SearchByIndex(2048);
         }
     }
 }

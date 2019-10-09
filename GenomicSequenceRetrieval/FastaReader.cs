@@ -20,7 +20,6 @@ namespace GenomicSequenceRetrieval
     {
         ///<summary>a private variable to store StreamReader</summary>
         private StreamReader reader;
-
         /*
             Intialize FastaReader
         */
@@ -138,42 +137,77 @@ namespace GenomicSequenceRetrieval
             return idList;
         }
 
+        //lvl4
+        public void SearchByIndex(int index)
+        {
+            //reader.BaseStream.Seek(index, SeekOrigin.Begin);
+            //Console.WriteLine(reader.ReadLine());
+        }
+
+        //lvl4
+        public List<string> MakeIndexForID(string fileName)
+        {
+            this.reader.BaseStream.Seek(0, SeekOrigin.Begin);
+
+            List<string> idList = new List<string>();
+
+            string text = File.ReadAllText(fileName);
+            using (var rearder = new StringReader(text))
+            using (var trackingReader = new TrackingTextReader(rearder))
+            {
+                string line;
+                while ((line = trackingReader.ReadLine()) != null)
+                {
+                    if (line.StartsWith(">", StringComparison.Ordinal))
+                    {
+                        string[] metadata = line.Split(null);
+                        foreach (string data in metadata)
+                        {
+                            if (data.StartsWith(">", StringComparison.Ordinal))
+                            {
+                                int index = trackingReader.Position - (line.Length + 1);
+                                string id = data.Remove(0, 1) + " " + index;
+                                idList.Add(id);
+                            }
+                        }
+                    }
+                }
+            }
+
+            return idList;
+        }
+
         //lvl 4
         public string DirectAccessByIndex(string id, int index)
         {
-            this.reader.DiscardBufferedData();
             this.reader.BaseStream.Seek(index, SeekOrigin.Begin);
 
-            Console.WriteLine("Position " + reader.BaseStream.Position);
             string result = "";
 
             if (id.ToCharArray().Length >= 11)
             {
                 ///Search16s -level2 16S.fasta NR_115365.1
-                while (true)
+                
+                var line = reader.ReadLine();
+                if (string.IsNullOrEmpty(line))
                 {
-                    var line = reader.ReadLine();
-                    if (string.IsNullOrEmpty(line))
-                    {
-                        result = string.Format("Error, sequence {0} not found.", id);
-                        break;
-                    }
+                    result = string.Format("Error, sequence {0} not found.", id);
+                }
 
-                    if (line.StartsWith(">", StringComparison.Ordinal))
+                if (line.StartsWith(">", StringComparison.Ordinal))
+                {
+                    ///metadata
+                    if (line.Contains(id))
                     {
-                        ///metadata
-                        if (line.Contains(id))
+                        result = line;
+                        string dna = reader.ReadLine();
+                        if (line.StartsWith("", StringComparison.Ordinal))
                         {
-                            result = line;
-                            string dna = reader.ReadLine();
-                            if (line.StartsWith("", StringComparison.Ordinal))
-                            {
-                                result += "\n" + dna;
-                            }
-                            break;
+                            result += "\n" + dna;
                         }
                     }
                 }
+                
             }
             else
             {
