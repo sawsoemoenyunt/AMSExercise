@@ -6,20 +6,22 @@
   <MonoDevelop.Ide.ItemProperties.DiceRoller FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.RandomArray FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.StringOrder FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GenomicSequenceRetrieval/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestRegex/Program.cs">
     <Files>
-      <File FileName="GenomicSequenceRetrieval/SearchLevel3.cs" Line="31" Column="55" />
-      <File FileName="GenomicSequenceRetrieval/Program.cs" Line="16" Column="24" />
+      <File FileName="GenomicSequenceRetrieval/SearchLevel3.cs" Line="73" Column="17" />
+      <File FileName="GenomicSequenceRetrieval/Program.cs" />
       <File FileName="GenomicSequenceRetrieval/FastaReader.cs" />
       <File FileName="GenomicSequenceRetrieval/SearchLevel4.cs" />
       <File FileName="GenomicSequenceRetrieval/SearchLevel6.cs" />
-      <File FileName="GenomicSequenceRetrieval/SearchLevel5.cs" />
+      <File FileName="GenomicSequenceRetrieval/SearchLevel5.cs" Line="1" Column="1" />
+      <File FileName="TestRegex/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AMSExercise" expanded="True">
-            <Node name="GenomicSequenceRetrieval" expanded="True">
+            <Node name="GenomicSequenceRetrieval" expanded="True" />
+            <Node name="TestRegex" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -28,6 +30,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Inheritance__of__SuperHeroes PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.TestRegex FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.IncomeTaxCalculator FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.StudentGradeOrder FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.Bank FirstBuild="True" />

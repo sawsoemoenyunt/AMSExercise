@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance_of_SuperHeroes"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenomicSequenceRetrieval", "GenomicSequenceRetrieval\GenomicSequenceRetrieval.csproj", "{216C870D-E986-4183-86C8-2D12E6BA8F3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRegex", "TestRegex\TestRegex.csproj", "{1D418768-ACAA-481D-9E72-F41308D64DFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -121,5 +123,9 @@ Global
 		{216C870D-E986-4183-86C8-2D12E6BA8F3E}.Debug|anycpu.Build.0 = Debug|anycpu
 		{216C870D-E986-4183-86C8-2D12E6BA8F3E}.Release|anycpu.ActiveCfg = Release|anycpu
 		{216C870D-E986-4183-86C8-2D12E6BA8F3E}.Release|anycpu.Build.0 = Release|anycpu
+		{1D418768-ACAA-481D-9E72-F41308D64DFE}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{1D418768-ACAA-481D-9E72-F41308D64DFE}.Debug|anycpu.Build.0 = Debug|anycpu
+		{1D418768-ACAA-481D-9E72-F41308D64DFE}.Release|anycpu.ActiveCfg = Release|anycpu
+		{1D418768-ACAA-481D-9E72-F41308D64DFE}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,5 @@
+/Users/macbookpro/Projects/AMSExercise/TestRegex/bin/Debug/TestRegex.exe
+/Users/macbookpro/Projects/AMSExercise/TestRegex/bin/Debug/TestRegex.pdb
+/Users/macbookpro/Projects/AMSExercise/TestRegex/obj/anycpu/Debug/TestRegex.csprojAssemblyReference.cache
+/Users/macbookpro/Projects/AMSExercise/TestRegex/obj/anycpu/Debug/TestRegex.exe
+/Users/macbookpro/Projects/AMSExercise/TestRegex/obj/anycpu/Debug/TestRegex.pdb
