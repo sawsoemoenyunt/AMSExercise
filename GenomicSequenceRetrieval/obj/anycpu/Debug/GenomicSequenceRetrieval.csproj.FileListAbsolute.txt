@@ -1,5 +1,4 @@
 /Users/macbookpro/Projects/AMSExercise/GenomicSequenceRetrieval/bin/Debug/GenomicSequenceRetrieval.exe
 /Users/macbookpro/Projects/AMSExercise/GenomicSequenceRetrieval/bin/Debug/GenomicSequenceRetrieval.pdb
-/Users/macbookpro/Projects/AMSExercise/GenomicSequenceRetrieval/obj/anycpu/Debug/GenomicSequenceRetrieval.csproj.CoreCompileInputs.cache
 /Users/macbookpro/Projects/AMSExercise/GenomicSequenceRetrieval/obj/anycpu/Debug/GenomicSequenceRetrieval.exe
 /Users/macbookpro/Projects/AMSExercise/GenomicSequenceRetrieval/obj/anycpu/Debug/GenomicSequenceRetrieval.pdb

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace GenomicSequenceRetrieval
 {
@@ -58,6 +59,71 @@ namespace GenomicSequenceRetrieval
         public void Close()
         {
             reader.Close();
+        }
+
+        //lvl7
+        public List<string> SearchSequenceWithWildCard(string sequenceWithWildcard)
+        {
+            List<string> resultList = new List<string>();
+            string sequencePattern = this.GenerateRegexPattern(sequenceWithWildcard);
+
+            this.reader.BaseStream.Seek(0, SeekOrigin.Begin);
+
+            string temp_metada = "";
+
+            while (true)
+            {
+                var line = reader.ReadLine();
+                if (string.IsNullOrEmpty(line))
+                {
+                    break;
+                }
+
+                if (line.StartsWith(">", StringComparison.Ordinal))
+                {
+                    ///metadata
+                    temp_metada = line;
+                }
+                else
+                {
+                    //sequence
+                    if (Regex.IsMatch(line, sequencePattern))
+                    {
+                        temp_metada = temp_metada + "\n" + line;
+                        resultList.Add(temp_metada);
+                    }
+                }
+            }
+            return resultList;
+        }
+
+        //lvl7 - regexPattern
+        public string GenerateRegexPattern(string text)
+        {
+            char[] characters = text.ToCharArray();
+            string pattern = @"";
+
+            foreach (char character in characters)
+            {
+                if (character.Equals('*'))
+                {
+                    pattern += "(\\w*)";
+                }
+                else
+                {
+                    pattern += "[" + character + "]";
+                }
+            }
+
+            if (characters[characters.Length - 1].Equals('*'))
+            {
+                pattern = "^" + pattern;
+            }
+            else
+            {
+                pattern = "^" + pattern + "$";
+            }
+            return pattern;
         }
 
         //lvl6

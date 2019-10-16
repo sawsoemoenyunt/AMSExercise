@@ -16,14 +16,14 @@ namespace TestRegex
             //    Console.WriteLine("{0} {1} a valid part number.",
             //                      partNumber,
             //                      Regex.IsMatch(partNumber, pattern) ? "is" : "is not");
-            string dna = "ACTG*GTAC*CA*";
+            string dna = "ACTG*GTAC*CA";
             Console.WriteLine(dna);
             string dnaPattern = @"[A][C][T][G](\w*)[G][T][A][C](\w*)[C][A]";
 
             string customPattern = GenerateRegexPattern(dna);
             Console.WriteLine(customPattern);
 
-            string[] dnaList = { "ACTGGTACCAA", "ACTGGTACCA", "ACTGCGTACCA", "ACTGGTACGCA", "ACTGAGTACTCA", "ACTGACGTACTGTGCCA", "ACTGACCGTACTGCA" };
+            string[] dnaList = { "ACTGGTACCAA", "nACTGGTACCA", "ACTGCGTACCA", "ACTGGTACGCA", "ACTGAGTACTCA", "ACTGACGTACTGTGCCA", "ACTGACCGTACTGCA" };
 
             foreach (string ddna in dnaList)
             {

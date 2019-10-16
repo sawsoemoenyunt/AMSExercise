@@ -2,6 +2,6 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <StartAction>Project</StartAction>
-    <StartArguments>Search16s -level1 16s.fasta 271 100000000</StartArguments>
+    <StartArguments>Search16s -level7 16S.fasta ACTG*GTAC*CA</StartArguments>
   </PropertyGroup>
 </Project>
