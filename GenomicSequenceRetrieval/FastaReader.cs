@@ -62,10 +62,9 @@ namespace GenomicSequenceRetrieval
         }
 
         //lvl7
-        public List<string> SearchSequenceWithWildCard(string sequenceWithWildcard)
+        public List<string> SearchSequenceWithRegex(string sequencePattern)
         {
             List<string> resultList = new List<string>();
-            string sequencePattern = this.GenerateRegexPattern(sequenceWithWildcard);
 
             this.reader.BaseStream.Seek(0, SeekOrigin.Begin);
 
@@ -95,35 +94,6 @@ namespace GenomicSequenceRetrieval
                 }
             }
             return resultList;
-        }
-
-        //lvl7 - regexPattern
-        public string GenerateRegexPattern(string text)
-        {
-            char[] characters = text.ToCharArray();
-            string pattern = @"";
-
-            foreach (char character in characters)
-            {
-                if (character.Equals('*'))
-                {
-                    pattern += "(\\w*)";
-                }
-                else
-                {
-                    pattern += "[" + character + "]";
-                }
-            }
-
-            if (characters[characters.Length - 1].Equals('*'))
-            {
-                pattern = "^" + pattern;
-            }
-            else
-            {
-                pattern = "^" + pattern + "$";
-            }
-            return pattern;
         }
 
         //lvl6

@@ -1,4 +1,4 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{1D418768-ACAA-481D-9E72-F41308D64DFE}|Default">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{216C870D-E986-4183-86C8-2D12E6BA8F3E}|Default">
   <MonoDevelop.Ide.ItemProperties.Matrix FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.HelloWorldV2 FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.HelloWorld PreferredExecutionTarget="MonoDevelop.Default" />
@@ -9,10 +9,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="GenomicSequenceRetrieval/Program.cs">
     <Files>
       <File FileName="GenomicSequenceRetrieval/SearchLevel3.cs" Line="1" Column="1" />
-      <File FileName="GenomicSequenceRetrieval/Program.cs" Line="1" Column="1" />
+      <File FileName="GenomicSequenceRetrieval/Program.cs" Line="23" Column="104" />
       <File FileName="GenomicSequenceRetrieval/FastaReader.cs" Line="73" Column="1" />
       <File FileName="TestRegex/Program.cs" Line="45" Column="21" />
-      <File FileName="GenomicSequenceRetrieval/SearchLevel7.cs" Line="28" Column="18" />
+      <File FileName="GenomicSequenceRetrieval/SearchLevel7.cs" Line="30" Column="80" />
       <File FileName="GenomicSequenceRetrieval/SequenceRetrieval.cs" Line="17" Column="19" />
     </Files>
     <Pads>
