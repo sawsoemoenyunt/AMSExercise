@@ -20,9 +20,12 @@ namespace GenomicSequenceRetrieval
             //FastaReader r = new FastaReader("16S.fasta");
             //r.SearchByIndex(2048);
 
-            SearchLevel7 s = new SearchLevel7("Search16s", FlagLevel.Level3, "16S.fasta", "ACTG*GTAC*CA");
-            s.StartSearching();
-            s.ShowResult();
+            //SearchLevel7 s = new SearchLevel7("Search16s", FlagLevel.Level3, "16S.fasta", "ACTG*GTAC*CA*");
+            //s.StartSearching();
+            //s.ShowResult();
+
+            SearchLevel4 lvl4 = new SearchLevel4();
+            lvl4.Search();
         }
     }
 }

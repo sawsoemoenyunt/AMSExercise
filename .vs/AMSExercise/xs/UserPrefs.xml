@@ -6,21 +6,19 @@
   <MonoDevelop.Ide.ItemProperties.DiceRoller FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.RandomArray FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.StringOrder FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GenomicSequenceRetrieval/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GenomicSequenceRetrieval/FastaReader.cs">
     <Files>
       <File FileName="GenomicSequenceRetrieval/SearchLevel3.cs" Line="1" Column="1" />
-      <File FileName="GenomicSequenceRetrieval/Program.cs" Line="23" Column="104" />
-      <File FileName="GenomicSequenceRetrieval/FastaReader.cs" Line="73" Column="1" />
-      <File FileName="TestRegex/Program.cs" Line="45" Column="21" />
-      <File FileName="GenomicSequenceRetrieval/SearchLevel7.cs" Line="30" Column="80" />
-      <File FileName="GenomicSequenceRetrieval/SequenceRetrieval.cs" Line="17" Column="19" />
+      <File FileName="GenomicSequenceRetrieval/Program.cs" />
+      <File FileName="GenomicSequenceRetrieval/FastaReader.cs" Line="65" Column="76" />
+      <File FileName="GenomicSequenceRetrieval/SearchLevel4.cs" Line="29" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AMSExercise" expanded="True">
             <Node name="GenomicSequenceRetrieval" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="FastaReader.cs" selected="True" />
             </Node>
             <Node name="TestRegex" expanded="True" />
           </Node>

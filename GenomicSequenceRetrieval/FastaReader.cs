@@ -21,6 +21,8 @@ namespace GenomicSequenceRetrieval
     {
         ///<summary>a private variable to store StreamReader</summary>
         private StreamReader reader;
+        ///<summary>a private variable to store filepath</summary>
+        private string filePath;
         /*
             Intialize FastaReader
         */
@@ -42,14 +44,8 @@ namespace GenomicSequenceRetrieval
         ///</exception>
         public FastaReader(string filePath)
         {
-            try
-            {
-                reader = new StreamReader(filePath);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            this.filePath = filePath;
+            this.Open();
         }
 
         
@@ -59,6 +55,18 @@ namespace GenomicSequenceRetrieval
         public void Close()
         {
             reader.Close();
+        }
+
+        public void Open()
+        {
+            try
+            {
+                reader = new StreamReader(this.filePath);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         //lvl7
@@ -180,6 +188,7 @@ namespace GenomicSequenceRetrieval
             //Console.WriteLine(reader.ReadLine());
         }
 
+
         //lvl4
         public List<string> MakeIndexForID(string fileName)
         {
@@ -216,6 +225,7 @@ namespace GenomicSequenceRetrieval
         //lvl 4
         public string DirectAccessByIndex(string id, int index)
         {
+            this.Open();
             this.reader.BaseStream.Seek(index, SeekOrigin.Begin);
 
             string result = "";
@@ -250,6 +260,7 @@ namespace GenomicSequenceRetrieval
                 result = string.Format("Error, sequence {0} not found.", id);
             }
 
+            this.Close();
             return result;
         }
 
